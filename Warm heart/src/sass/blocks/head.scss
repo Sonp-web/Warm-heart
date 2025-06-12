@@ -1,0 +1,20 @@
+@use "/src/sass/base/variables.scss" as *;
+.head {
+  background-color: $beige;
+  padding-top: 70px;
+  min-height: 470px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: $black;
+  }
+  &__button {
+    margin-top: 35px;
+  }
+}

@@ -1,0 +1,11 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.button-shop {
+  @include button;
+  background-color: $black;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  color: $white;
+}

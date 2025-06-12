@@ -1,0 +1,13 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin title {
+  color: $black;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin button {
+  border-radius: 100px;
+  width: 236px;
+  height: 55px;
+}
