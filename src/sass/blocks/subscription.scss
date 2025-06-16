@@ -1,0 +1,33 @@
+@use "/src/sass/base/variables.scss" as *;
+.subscription {
+  background-color: $beige;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  &__descr {
+    margin-top: 20px;
+  }
+  &__input {
+    width: 320px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid $black;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    &::placeholder {
+      opacity: 0.3;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $black;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+  }
+}
+.button-submit {
+  margin-top: 40px;
+}

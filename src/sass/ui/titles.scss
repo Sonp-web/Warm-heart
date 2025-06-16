@@ -2,8 +2,13 @@
 
 .title-h1 {
   @include title;
-  font-weight: 900;
   font-size: 40px;
-
-  line-height: 130%;
+}
+.title-h2 {
+  @include title;
+  font-size: 36px;
+}
+.title-h3 {
+  @include title;
+  font-size: 28px;
 }

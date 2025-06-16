@@ -3,11 +3,15 @@
 @mixin title {
   color: $black;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   line-height: normal;
+  line-height: 130%;
 }
 @mixin button {
   border-radius: 100px;
   width: 236px;
   height: 55px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
 }

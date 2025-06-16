@@ -1,0 +1,23 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.black__block {
+  background-color: $black;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  color: $white;
+
+  &__descr {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  &__title-h2 {
+    color: $white;
+  }
+}

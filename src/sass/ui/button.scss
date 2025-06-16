@@ -9,3 +9,16 @@
   line-height: 140%;
   color: $white;
 }
+
+.button-go-shop {
+  @include button;
+  color: $black;
+  background-color: $white;
+  margin-top: 35px;
+}
+.button-submit {
+  @include button;
+  width: 214px;
+  color: $white;
+  background-color: $black;
+}
