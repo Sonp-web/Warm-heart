@@ -18,3 +18,14 @@
     margin-top: 35px;
   }
 }
+@media (min-width: 768px) {
+  .head {
+    padding-bottom: 120px;
+    &__info {
+      width: 440px;
+    }
+    &__description {
+      font-size: 21px;
+    }
+  }
+}

@@ -5,9 +5,13 @@
   padding-bottom: 20px;
   width: 100%;
   &__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
+  }
+  &__right {
+    text-align: right;
   }
   &__title {
     font-weight: 900;
@@ -39,5 +43,33 @@
   }
   .icon-shopping-bag::before {
     font-size: 28px;
+  }
+}
+@media (min-width: 480px) {
+  .header {
+    &__wrapper {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 30px 0;
+    &__wrapper {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    .icon-search {
+      display: block;
+      font-size: 28px;
+    }
+    &__right {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      row-gap: 30px;
+    }
+    &__title {
+      font-size: 36px;
+    }
   }
 }

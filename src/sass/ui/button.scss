@@ -5,7 +5,6 @@
   @include button;
   background-color: $black;
   font-weight: 700;
-  font-size: 17px;
   line-height: 140%;
   color: $white;
 }
@@ -21,4 +20,11 @@
   width: 214px;
   color: $white;
   background-color: $black;
+}
+@media (min-width: 768px) {
+  .button-shop,
+  .button-go-shop,
+  .button-submit {
+    font-size: 21px;
+  }
 }

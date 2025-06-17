@@ -31,7 +31,7 @@
     margin-top: 40px;
     list-style-type: none;
     padding: 0;
-    
+
     &__item {
       color: $white;
       font-weight: 700;
@@ -53,10 +53,46 @@
         li {
           margin-bottom: 10px;
         }
+        transition: all 1s;
       }
     }
+  }
+  &__descr {
+    ul {
+      padding: 0;
+      margin-top: 40px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+    }
+    li {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 130%;
+      color: $white;
+      opacity: 0.3;
+    }
+  }
+  &__title-h3 {
+    color: $white;
+    text-transform: uppercase;
   }
 }
 hr {
   opacity: 0.3;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  .footer {
+    &__top__wrapper {
+      display: flex;
+      
+    }
+    &__links {
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
 }

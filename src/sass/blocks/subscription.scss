@@ -21,13 +21,41 @@
     &:focus {
       border: none;
       outline: none;
-      border-bottom: 2px solid $black;
+      border-bottom: 4px solid $black;
     }
   }
   &__form {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
   }
 }
 .button-submit {
   margin-top: 40px;
+}
+@media (min-width: 480px) {
+  .subscription {
+    &__descr {
+      width: 400px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .subscription {
+    padding-top: 90px;
+    padding-bottom: 120px;
+    &__descr {
+      width: 100%;
+    }
+    &__descr {
+      font-size: 21px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .subscription {
+    &__input {
+      width: 450px;
+    }
+  }
 }

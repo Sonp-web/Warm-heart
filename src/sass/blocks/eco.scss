@@ -5,23 +5,20 @@
   padding-top: 70px;
   position: relative;
   padding-bottom: 90px;
-  .icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    border: 3px solid $black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -50px;
-    left: 130px;
-    background-color: $white;
-  }
+
   &__descr {
     margin-top: 20px;
     font-weight: 400;
     font-size: 17px;
     line-height: 140%;
+  }
+}
+@media (min-width: 768px) {
+  .eco {
+    padding-top: 90px;
+    padding-bottom: 120px;
+    &__descr {
+      font-size: 21px;
+    }
   }
 }
