@@ -38,7 +38,6 @@
       font-size: 20px;
       line-height: 140%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       height: 53px;
       cursor: pointer;
@@ -88,11 +87,31 @@ hr {
   .footer {
     &__top__wrapper {
       display: flex;
-      
+      gap: 50px;
     }
     &__links {
       margin: 0;
       margin-left: 10px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    &__menu {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-between;
+      &__item {
+        grid-row: 1;
+        &__submenu {
+          grid-row: 2;
+          display: block;
+          transition: none;
+        }
+      }
+    }
+    hr {
+      display: none;
     }
   }
 }

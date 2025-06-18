@@ -23,6 +23,7 @@
   }
   &__title-h3 {
     color: $white;
+    margin-top: 40px;
   }
 }
 .icon {
@@ -35,7 +36,6 @@
   justify-content: center;
   position: absolute;
   left: 50%;
-
   transform: translateX(-50%) translateY(-50%);
   background-color: $white;
   z-index: 10;
@@ -60,6 +60,7 @@
       display: grid;
       grid-template-columns: 2fr 2fr;
       column-gap: 40px;
+      align-items: center;
     }
     &__descr {
       font-size: 21px;

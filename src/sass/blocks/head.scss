@@ -3,6 +3,54 @@
   background-color: $beige;
   padding-top: 70px;
   min-height: 470px;
+  &__right {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 90px;
+    width: 100%;
+    background-image: url("/src/img/Group\ 42.png");
+  }
+  &__slider {
+    &__window {
+      display: block;
+      margin: 0 auto;
+      width: 178px;
+      height: 174px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -20%);
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 600%;
+      height: 100%;
+    }
+    &__item {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__pagination {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      justify-content: center;
+    }
+    &__dot {
+      opacity: 0.3;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      background-color: $white;
+    }
+    &__dot-active {
+      opacity: 1;
+    }
+  }
   &__info {
     display: flex;
     flex-direction: column;
@@ -16,16 +64,82 @@
   }
   &__button {
     margin-top: 35px;
+    margin-bottom: 90px;
+  }
+}
+@media (min-width: 480px) {
+  .head {
+    &__right {
+      padding-top: 130px;
+    }
+    &__slider {
+      &__window {
+        transform: translate(20%, -60%);
+      }
+    }
   }
 }
 @media (min-width: 768px) {
   .head {
-    padding-bottom: 120px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    &__left {
+      padding-top: 90px;
+    }
+    &__right {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    &__slider {
+      &__window {
+        width: 251px;
+        height: 241px;
+        transform: translate(-100%, 150%);
+      }
+      &__item {
+        width: 100%;
+      }
+      &__pagination {
+        flex-direction: column;
+        align-items: end;
+        margin-right: 20px;
+      }
+    }
     &__info {
       width: 440px;
     }
     &__description {
       font-size: 21px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .head {
+    &__slider {
+      &__window {
+        width: 312px;
+        height: 300px;
+        transform: translate(-100%, 40%);
+      }
+      .svg-line {
+        width: 300px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          width: calc(100% - 4px);
+          height: calc(100% - 4px);
+          border: 3px solid transparent;
+          border-top-color: #2c2c2c;
+          border-right-color: #2c2c2c;
+          border-radius: 50%;
+          transform: rotate(-90deg);
+        }
+      }
     }
   }
 }

@@ -1,0 +1,120 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.popular {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  &__slider {
+    margin-top: 40px;
+    &__window {
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+      width: 320px;
+      height: 375px;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 600%;
+      height: 100%;
+    }
+    &__item {
+      height: 100%;
+      width: 320px;
+      &__wrapper {
+        border-radius: 25px;
+        background-color: $beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+      &__wrapper__descr {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+        h5 {
+          grid-column-start: 1;
+          grid-column-end: 4;
+        }
+        p {
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 140%;
+          &:first-of-type {
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+          &:last-child {
+            grid-column-start: 3;
+          }
+        }
+      }
+    }
+    &__pagination {
+      margin-top: 33px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+      justify-content: center;
+    }
+    &__dot {
+      opacity: 0.3;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      background-color: $black;
+    }
+    &__dot-active {
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .popular {
+    &__slider {
+      &__window {
+        width: 440px;
+        height: 297px;
+      }
+      &__wrapper {
+        gap: 20px;
+      }
+      &__item {
+        width: 210px;
+        height: 297px;
+        &__wrapper {
+          padding: 40px 25px;
+          img {
+            width: 160px;
+            height: 154px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .popular {
+    &__slider {
+      &__item {
+        width: 354px;
+        img {
+          width: 254px;
+          height: 243px;
+        }
+        &__wrapper__descr {
+          margin-top: 15px;
+          p {
+            font-size: 21px;
+          }
+        }
+      }
+      &__window {
+        width: 728px;
+        height: 424px;
+      }
+    }
+  }
+}

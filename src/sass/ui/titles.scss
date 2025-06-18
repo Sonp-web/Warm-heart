@@ -12,6 +12,10 @@
   @include title;
   font-size: 28px;
 }
+.title-h5 {
+  font-weight: 700;
+  font-size: 20px;
+}
 
 @media (min-width: 480px) {
   .title-h1 {
@@ -23,8 +27,15 @@
 }
 @media (min-width: 768px) {
   .title-h1 {
-    font-size: 60px;
+    font-size: 58px;
   }
-  .title-h2{font-size: 48px;}
-  .title-h3{font-size: 36px;}
+  .title-h2 {
+    font-size: 48px;
+  }
+  .title-h3 {
+    font-size: 36px;
+  }
+  .title-h5 {
+    font-size: 24px;
+  }
 }

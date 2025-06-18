@@ -21,8 +21,13 @@
     color: $black;
     margin-top: 5px;
   }
+  &__item {
+    &:first-of-type {
+      display: none;
+    }
+  }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .inst {
     img {
       width: 100%;
@@ -30,13 +35,23 @@
     &__descr {
       font-size: 21px;
     }
-    &__link{
+    &__link {
       font-size: 36px;
     }
     &__wrapper {
       display: grid;
       grid-template-columns: 2fr 2fr;
       column-gap: 20px;
+    }
+    &__item {
+      &:first-of-type {
+        display: block;
+      }
+      &:last-child {
+        p {
+          display: none;
+        }
+      }
     }
   }
 }
