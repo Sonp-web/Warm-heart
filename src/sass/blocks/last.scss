@@ -1,0 +1,57 @@
+@use "/src/sass/base/variables.scss" as *;
+.last {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  &__wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  &__item {
+    width: 100%;
+    &__wrapper {
+      border-radius: 100%;
+      background-color: $beige;
+      padding: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .last {
+    &__item {
+      &__wrapper {
+        padding: 20%;
+      }
+    }
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .last {
+    &__item {
+      &__wrapper {
+        padding: 46px;
+      }
+    }
+    &__wrapper {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .last {
+    &__item {
+      &__wrapper {
+        padding: 60px;
+      }
+    }
+  }
+}

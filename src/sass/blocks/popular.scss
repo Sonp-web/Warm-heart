@@ -20,8 +20,8 @@
       transition: all 0.3s;
     }
     &__item {
-      height: 100%;
       width: 320px;
+      height: 375px;
       &__wrapper {
         border-radius: 25px;
         background-color: $beige;
@@ -89,7 +89,6 @@
         width: 210px;
         height: 297px;
         &__wrapper {
-          padding: 40px 25px;
           img {
             width: 160px;
             height: 154px;

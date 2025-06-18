@@ -29,6 +29,7 @@
       width: 600%;
       height: 100%;
       transition: all 0.3s;
+      gap: 20px;
     }
     &__item {
       img {
@@ -69,10 +70,7 @@
     margin-bottom: 90px;
   }
 }
-.shop {
-  padding-top: 25px;
-  padding-bottom: 40px;
-}
+
 @media (min-width: 480px) {
   .head {
     &__right {
@@ -85,6 +83,7 @@
     }
   }
 }
+
 @media (min-width: 768px) {
   .head {
     padding: 0;
@@ -120,6 +119,13 @@
     &__description {
       font-size: 21px;
     }
+    &__shop {
+      &__info {
+        width: 100%;
+        flex-direction: row;
+        gap: 50px;
+      }
+    }
   }
 }
 @media (min-width: 1000px) {
@@ -147,6 +153,13 @@
       //   }
       // }
     }
+    &__shop {
+      &__info {
+        p {
+          width: 636px;
+        }
+      }
+    }
   }
 }
 @media (min-width: 1920px) {
@@ -158,6 +171,9 @@
         left: 25%;
         width: 405px;
         height: 390px;
+      }
+      &__wrapper {
+        gap: 30px;
       }
     }
   }
