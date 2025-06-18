@@ -1,4 +1,5 @@
 import "../sass/style.scss";
+import slider from "./modules/slider";
 
 document.addEventListener("DOMContentLoaded", () => {
   if (window.screen.width >= 480) {
@@ -30,4 +31,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+  slider({
+    wrapperSelector: ".head__slider__wrapper",
+    itemSelector: ".head__slider__item",
+    paginationSelector: ".head__slider__pagination",
+    dotsSelector: ".head__slider__dot",
+  });
+  slider({
+    wrapperSelector: ".popular__slider__wrapper",
+    itemSelector: ".popular__slider__item",
+    paginationSelector: ".popular__slider__pagination",
+    dotsSelector: ".popular__slider__dot",
+  });
 });

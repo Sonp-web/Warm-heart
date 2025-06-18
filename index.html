@@ -23,10 +23,17 @@
                 <div class="header__burger">
                     <span></span><span></span><span></span>
                 </div>
+                <ul class="header__nav">
+                    <li class="header__nav__title">Shop</li>
+                    <li class="header__nav__title">About us</li>
+                    <li class="header__nav__title">Contacts</li>
+                </ul>
                 <div class="header__title">wh</div>
                 <div class="header__right">
                     <span class="icon-search"></span>
                     <span class="icon-shopping-bag"></span>
+                    <p class="header__search">Search</p>
+                    <p class="header__cart">Cart</p>
                 </div>
             </div>
         </div>
@@ -45,17 +52,17 @@
         </div>
         <div class="head__right">
             <div class="head__slider">
-                    <div class="head__slider__window">
-                        <div class="head__slider__wrapper">
-                            <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
-                            <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
-                            <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
-                            <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
-                            <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
-                            <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
-                        </div>
+                <div class="head__slider__window">
+                    <div class="head__slider__wrapper">
+                        <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
+                        <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
+                        <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
+                        <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
+                        <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
+                        <div class="head__slider__item"><img src="/src/img/slider.png" alt=""></div>
                     </div>
-                
+                </div>
+
 
                 <div class="head__slider__pagination">
                     <div class="head__slider__dot head__slider__dot-active"></div>
@@ -75,7 +82,10 @@
                 <div class="popular__slider__window">
                     <div class="popular__slider__wrapper">
                         <div class="popular__slider__item">
-                            <div class="popular__slider__item__wrapper"><img src="/src/img/popular.png" alt=""></div>
+                            <div class="popular__slider__item__wrapper">
+                                <div class="popular__slider__item__wrapper__add"></div><img src="/src/img/popular.png"
+                                    alt="">
+                            </div>
                             <div class="popular__slider__item__wrapper__descr">
                                 <h5 class="title-h5">Gerhild</h5>
                                 <p>130x170 cm</p>
@@ -83,7 +93,10 @@
                             </div>
                         </div>
                         <div class="popular__slider__item">
-                            <div class="popular__slider__item__wrapper"><img src="/src/img/popular.png" alt=""></div>
+                            <div class="popular__slider__item__wrapper">
+                                <div class="popular__slider__item__wrapper__add"></div><img src="/src/img/popular.png"
+                                    alt="">
+                            </div>
                             <div class="popular__slider__item__wrapper__descr">
                                 <h5 class="title-h5">Gultall</h5>
                                 <p>130x170 cm</p>
@@ -91,7 +104,21 @@
                             </div>
                         </div>
                         <div class="popular__slider__item">
-                            <div class="popular__slider__item__wrapper"><img src="/src/img/popular.png" alt=""></div>
+                            <div class="popular__slider__item__wrapper">
+                                <div class="popular__slider__item__wrapper__add"></div><img src="/src/img/popular.png"
+                                    alt="">
+                            </div>
+                            <div class="popular__slider__item__wrapper__descr">
+                                <h5 class="title-h5">Rovaror</h5>
+                                <p>150x200 cm</p>
+                                <p>€85</p>
+                            </div>
+                        </div>
+                        <div class="popular__slider__item">
+                            <div class="popular__slider__item__wrapper">
+                                <div class="popular__slider__item__wrapper__add"></div><img src="/src/img/popular.png"
+                                    alt="">
+                            </div>
                             <div class="popular__slider__item__wrapper__descr">
                                 <h5 class="title-h5"></h5>
                                 <p></p>
@@ -99,7 +126,10 @@
                             </div>
                         </div>
                         <div class="popular__slider__item">
-                            <div class="popular__slider__item__wrapper"><img src="/src/img/popular.png" alt=""></div>
+                            <div class="popular__slider__item__wrapper">
+                                <div class="popular__slider__item__wrapper__add"></div><img src="/src/img/popular.png"
+                                    alt="">
+                            </div>
                             <div class="popular__slider__item__wrapper__descr">
                                 <h5 class="title-h5"></h5>
                                 <p></p>
@@ -107,15 +137,10 @@
                             </div>
                         </div>
                         <div class="popular__slider__item">
-                            <div class="popular__slider__item__wrapper"><img src="/src/img/popular.png" alt=""></div>
-                            <div class="popular__slider__item__wrapper__descr">
-                                <h5 class="title-h5"></h5>
-                                <p></p>
-                                <p></p>
+                            <div class="popular__slider__item__wrapper">
+                                <div class="popular__slider__item__wrapper__add"></div><img src="/src/img/popular.png"
+                                    alt="">
                             </div>
-                        </div>
-                        <div class="popular__slider__item">
-                            <div class="popular__slider__item__wrapper"><img src="/src/img/popular.png" alt=""></div>
                             <div class="popular__slider__item__wrapper__descr">
                                 <h5 class="title-h5"></h5>
                                 <p></p>
@@ -181,27 +206,40 @@
             <div class="inst__wrapper">
 
                 <div class="inst__item">
-                    <img src="/src/img/2.png" alt="" class="inst__img">
-                    <p class="inst__descr">On our Instagram, we regularly share the most interesting news. We also tell
+                    <div class="inst__img"></div>
+                    <p class="inst__descr">On our Instagram, we regularly share the most interesting news. We also
+                        tell
                         you
                         about all our new products.</p>
                 </div>
-                <div class="inst__item">
-                    <img src="/src/img/inst.png" alt="" class="inst__img">
-                    <a href="" class="inst__link">@warm.heart</a>
-                    <p class="inst__descr">On our Instagram, we regularly share the most interesting news. We also tell
-                        you
-                        about all our new products.</p>
-                </div>
-            </div>
 
-        </div>
+                <div class="inst__item">
+                    <div class="inst__img">
+
+                    </div>
+                </div>
+
+                <div class="inst__item">
+                    <div class="inst__img"></div>
+                    <a href="" class="inst__link">@warm.heart</a>
+                    <p class="inst__descr">On our Instagram, we regularly share the most interesting news.
+                        We also tell
+                        you
+                        about all our new products.</p>
+
+                </div>
+
+            </div>
     </section>
     <section class="subscription">
         <div class="container">
-            <h2 class="title-h2">Get 20% off <br> your first purchase</h2>
-            <p class="subscription__descr">Subscribe to our newsletter and get a promo code for a 20% discount! You will
-                receive only the most important and relevant news.</p>
+            <div class="subscription__left">
+                <h2 class="title-h2">Get 20% off <br> your first purchase</h2>
+                <p class="subscription__descr">Subscribe to our newsletter and get a promo code for a 20% discount!<br>
+                    You
+                    will
+                    receive only the most important and relevant news.</p>
+            </div>
             <form action="" class="subscription__form">
                 <input type="email" class="subscription__input" placeholder="Email address">
                 <button class="button-submit" type="submit">Submit</button>

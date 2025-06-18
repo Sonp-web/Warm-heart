@@ -5,13 +5,16 @@
   padding-bottom: 90px;
   &__descr {
     margin-top: 20px;
+    br {
+      display: none;
+    }
   }
   &__input {
     width: 320px;
     height: 40px;
     border: none;
     background: transparent;
-    border-bottom: 2px solid $black;
+    border-bottom: 4px solid $black;
     font-weight: 400;
     font-size: 17px;
     line-height: 140%;
@@ -56,6 +59,45 @@
   .subscription {
     &__input {
       width: 450px;
+      font-size: 21px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .subscription {
+    .container {
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+    }
+    &__input {
+      margin-top: 30px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .subscription {
+    .container {
+      grid-template-columns: 7fr 5fr;
+      gap: 60px;
+    }
+    &__left {
+      .title-h2 {
+        br {
+          display: none;
+        }
+      }
+    }
+    &__form {
+      margin: 0;
+    }
+    &__descr {
+      br {
+        display: block;
+      }
+    }
+    &__input {
+      margin: 0;
+      height: 45px;
     }
   }
 }

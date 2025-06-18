@@ -1,0 +1,70 @@
+@use "/src/sass/base/variables.scss" as *;
+.head {
+  &__filter {
+    padding-top: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    padding-bottom: 30px;
+    &__props {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      &__filter {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+      }
+      &__active {
+        display: grid;
+        gap: 15px;
+        &__item {
+          border-radius: 100px;
+          width: 159px;
+          height: 39px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 140%;
+          background-color: $black;
+          color: $white;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          .delete {
+            background-color: gray;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            &:before {
+              content: "";
+              display: block;
+              width: 11px;
+              height: 2px;
+              border-radius: 4px;
+              background-color: $white;
+              top: 43%;
+              transform: translateX(30%) rotate(45deg);
+              opacity: 2;
+              position: relative;
+            }
+            &:after {
+              content: "";
+              display: block;
+              width: 11px;
+              height: 2px;
+              border-radius: 4px;
+              background-color: $white;
+              top: 6px;
+              transform: translateX(30%) rotate(135deg);
+              opacity: 2;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}

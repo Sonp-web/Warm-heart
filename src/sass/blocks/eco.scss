@@ -22,3 +22,12 @@
     }
   }
 }
+@media (min-width: 1920px) {
+  .eco {
+    padding-top: 130px;
+    padding-bottom: 150px;
+    &__descr {
+      padding: 0 210px;
+    }
+  }
+}

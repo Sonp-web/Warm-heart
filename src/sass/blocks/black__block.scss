@@ -43,9 +43,6 @@
 
 @media (min-width: 480px) {
   .black__block {
-    img {
-      margin-right: 95px;
-    }
     &__descr {
       margin-right: 112px;
     }
@@ -61,6 +58,10 @@
       grid-template-columns: 2fr 2fr;
       column-gap: 40px;
       align-items: center;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
     }
     &__descr {
       font-size: 21px;
@@ -73,6 +74,33 @@
     svg {
       width: 92px;
       height: 100px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .black__block {
+    &__wrapper {
+      img {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .black__block {
+    .container{
+      padding-bottom: 150px;
+    }
+    padding-top: 130px;
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
