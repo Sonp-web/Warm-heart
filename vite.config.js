@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         shop: resolve(__dirname, "shop.html"),
+        case: resolve(__dirname, "case.html"),
       },
     },
   },

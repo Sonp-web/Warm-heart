@@ -21,10 +21,16 @@
   color: $white;
   background-color: $black;
 }
+.button-add {
+  @include button;
+  color: $white;
+  background-color: $black;
+}
 @media (min-width: 768px) {
   .button-shop,
   .button-go-shop,
-  .button-submit {
+  .button-submit,
+  .button-add {
     font-size: 21px;
   }
 }

@@ -1,5 +1,8 @@
 @use "/src/sass/base/variables.scss" as *;
 .cards {
+  &__list {
+    display: none;
+  }
   &__wrapper {
     display: grid;
     gap: 25px;
@@ -100,11 +103,95 @@
       }
     }
   }
+  .cards {
+    &__wrapper {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 50px;
+      &__item {
+        display: grid;
+        grid-template-columns: 280px 2.5fr;
+        border: 2px solid #bebdbc;
+        border-radius: 25px;
+        &__wrapper {
+          border-radius: 25px 0 0 25px;
+          background-color: $beige;
+          padding: 30px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &__right {
+          padding: 25px 30px;
+          display: flex;
+          flex-direction: row;
+        }
+        &__descr {
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 130%;
+          display: flex;
+          flex-direction: column;
+          h5 {
+            margin-bottom: 15px;
+          }
+          &__params {
+            font-weight: 600;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: auto;
+            span {
+              display: none;
+              font-weight: 400;
+            }
+          }
+        }
+        &__shop {
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 140%;
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .icon-shopping-bag {
+            border-radius: 100px;
+            width: 78px;
+            height: 55px;
+            background-color: $black;
+            font-size: 28px;
+            color: $white;
+            &:before {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1000px) {
   .cards {
     &__wrapper {
       grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__list {
+      &__item {
+        &__descr {
+          margin-right: 80px;
+          &__params {
+            span {
+              display: inline;
+            }
+          }
+        }
+      }
     }
   }
   .card {
@@ -114,6 +201,25 @@
   }
 }
 @media (min-width: 1920px) {
+  .cards {
+    &__list {
+      &__item {
+        &__descr {
+          margin-right: 121px;
+          &__params {
+            gap: 50px;
+          }
+        }
+        &__shop {
+          .icon-shopping-bag {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
   .card {
     &__wrapper {
       padding: 60px;
