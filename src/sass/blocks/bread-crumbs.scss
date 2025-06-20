@@ -1,0 +1,13 @@
+.bread-crumbs {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    * {
+      opacity: 0.3;
+    }
+    &__active {
+      opacity: 1;
+    }
+  }
+}

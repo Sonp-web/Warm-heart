@@ -25,6 +25,7 @@
   @include button;
   color: $white;
   background-color: $black;
+  width: 180px;
 }
 @media (min-width: 768px) {
   .button-shop,
@@ -32,5 +33,10 @@
   .button-submit,
   .button-add {
     font-size: 21px;
+  }
+}
+@media (min-width: 1000px) {
+  .button-add {
+    max-width: 265px;
   }
 }

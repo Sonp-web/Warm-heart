@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         shop: resolve(__dirname, "shop.html"),
         case: resolve(__dirname, "case.html"),
+        case: resolve(__dirname, "cart.html"),
       },
     },
   },
